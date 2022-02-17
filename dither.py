@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("suporte/base_image.jpeg").convert("L")
+img = Image.open("base_image.jpeg").convert("L")
 print("Total pixels:", img.height * img.width)
 
 limit = 128
@@ -21,4 +21,4 @@ for v_pixel in range(img.height):
         except IndexError:
             pass
 
-img.save("suporte/output.png")
+img.save("output.png")
